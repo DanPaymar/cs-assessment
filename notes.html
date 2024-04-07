@@ -1,0 +1,19 @@
+<!-- some notes
+
+Results for the extraLargeArray
+insert 624.95575 ms
+append 2.66025 ms
+
+
+        tinyArray || smallArray || mediumArray || extraLargeArray 
+insert     12.291     23.459         115.75            624.95
+append     35.333     39.917         69.542            2.66
+
+
+
+The doubler append scales better because it's time decreases as the array grows in length. Using the push method adds to the end of the array which takes up less memory than using unshift which has to shift the position of each item in the array. For larger arrays the push method is the better solution however as seen in the tests, for small arrays the unshift method is faster.
+
+
+
+
+-->
